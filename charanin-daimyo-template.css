@@ -1,0 +1,226 @@
+@import url(https://db.onlinewebfonts.com/c/f12126e8a8e529e8195c7357dd5ad0c4?family=Satoshi+Black); 
+ @import url(https://db.onlinewebfonts.com/c/7bec814954d059a7e7dae047285eedbc?family=Satoshi+Medium); 
+
+body{
+    background: #161515;
+    padding:0px;
+    margin:0px;
+}
+
+.charanin-temp b {
+    color:#F54247;
+}
+
+
+ .charanin-temp {
+ width: calc(100% - 80px);
+ margin: 0 auto;
+ background: #171717;
+ padding: 40px;
+ min-height: 200px;
+ position: relative;
+ border: 1px solid #2F2F2F;
+ height: max-content;
+ font-family: "Satoshi Medium";
+ color: #E3E3E3;
+ clip-path: border-box;
+}
+
+.charanin-post-visual {
+ position: absolute;
+ max-width: 800px;
+ max-height: 300px;
+ overflow: hidden;
+ right: 0;
+ top: 0;
+}
+
+.charanin-post-visual img {
+ position: relative;
+ inset: 0;
+ height: 100%;
+}
+
+.charanin-post-mask {
+ position: absolute;
+ inset: 0;
+ pointer-events: none;
+ background: linear-gradient(-30deg, rgba(23, 23, 23, 0) 40%, rgba(23, 23, 23, 0.20) 100%), linear-gradient(270deg, rgba(23, 23, 23, 0.14) 0%, #171717 100%), linear-gradient(180deg, rgba(23, 23, 23, 0.2) 50%, #171717 100%);
+}
+
+.charanin-post-content {
+ position: relative;
+ z-index: 3;
+ font-size: 13px;
+ line-height: 150%;
+ text-align: left;
+ display: flex;
+ row-gap: 24px;
+ flex-direction: column;
+}
+
+.charanin-top-content {
+ display:flex;
+ align-items: center;
+ padding:24px;
+ background: #2E2E2E;
+} 
+
+.charanin-character-img {
+  position: relative;
+  width:150px;
+  height:180px;
+}
+
+.charanin-character-img img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  image-rendering: optimizespeed;
+}
+
+.charanin-character-img .mask {
+  mask-image: url(https://raw.githubusercontent.com/purplemiel/test/refs/heads/main/ava-mask.png);
+  width: 150px;
+}
+
+.charanin-infos {
+ width: 100%;
+ margin-left: 26px;
+}
+
+.charanin-subtitle svg {
+  height: 16px;
+  fill: #F54247;
+}
+
+.charanin-subtitle span {
+  margin-left:4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Satoshi Black";
+  color: #F54247;
+}
+
+span.charanin-title {
+ font-size: 32px;
+ font-family: "Satoshi Black";
+ text-transform: uppercase;
+ font-weight: 500;
+ line-height: 150%;
+}
+
+.charanin-infos hr {
+ color: grey;
+ margin: 8px 0px
+}
+
+.charanin-soundcloud {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ position: relative;
+ z-index: 10;
+ height: 20px;
+ filter: grayscale(100%);
+ background-color: #171717;
+ padding:8px 8px;
+ margin-top: 8px;
+}
+
+.charanin-player {
+ position: absolute;
+ top: 50%;
+ height: 20px;
+ width: 20px;
+ margin-top: -10px;
+}
+
+.charanin-soundcloud span {
+ position: absolute;
+ left: 36px;
+ color: #E3E3E3;
+ font-size:12px;
+}
+
+.charanin-infos .basic-infos {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 24px;
+}
+
+.tag-infos {
+    padding: 11px 0px;
+    width: 96px;
+    background: #DF3237;
+    text-align:center;
+    text-transform:uppercase;
+    font-family: "Satoshi Black";
+}
+
+.tag-infos i {
+    display: inline-block;
+    vertical-align: top;
+    width:16px;
+    height:16px;
+    margin-right:4px
+}
+
+i.gender {
+    background-image: url(https://raw.githubusercontent.com/purplemiel/test/e06b134ed131845bf3b2dc310bf85d86677f8f5e/birthday.svg);
+}
+
+i.age {
+    background-image: url(https://raw.githubusercontent.com/purplemiel/test/e06b134ed131845bf3b2dc310bf85d86677f8f5e/user.svg);
+}
+
+i.birthday {
+    background-image: url(https://raw.githubusercontent.com/purplemiel/test/e06b134ed131845bf3b2dc310bf85d86677f8f5e/birthday.svg);
+}
+
+i.height {
+    background-image: url(https://raw.githubusercontent.com/purplemiel/test/e06b134ed131845bf3b2dc310bf85d86677f8f5e/height.svg);
+}
+
+.charanin-traits {
+    display:flex;
+    column-gap: 16px;
+}
+
+.traits.tag-infos {
+    background: #2E2E2E;
+    color: #F54247;
+    width: initial;
+    padding:11px 16px
+}
+.charanin-text-content {
+ background: #1F1F1F;
+ border: 1px solid #2E2E2E;
+ padding: 24px 24px 4px 24px;
+}
+
+.miscellaneous {
+    padding: 24px 40px;
+    background-image: url(https://zupimages.net/up/26/06/yiuv.jpg);
+    display:flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.miscellaneous .title {
+    font-size:24px;
+    color: #F54247;
+    font-family: "Satoshi Black";
+    text-transform: uppercase;
+}
+
+.miscellaneous .title i {
+    text-transform:uppercase;
+}
+
+.codetxtarea {
+ width: 100% !important;
+ height: 300px !important;
+}
